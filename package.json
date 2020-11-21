@@ -1,0 +1,29 @@
+{
+  "name": "github-universe-2020-tutorial",
+  "version": "1.0.0",
+  "description": "Three.js Kinetic Type mini-tutorial for Github Universe",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioecg/github-universe-2020-tutorial.git"
+  },
+  "keywords": [
+    "threejs",
+    "kinetic",
+    "typography"
+  ],
+  "author": "marioecg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marioecg/github-universe-2020-tutorial/issues"
+  },
+  "homepage": "https://github.com/marioecg/github-universe-2020-tutorial#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "three": "^0.122.0"
+  }
+}
