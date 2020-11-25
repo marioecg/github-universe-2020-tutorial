@@ -13,6 +13,7 @@ init();
 animate();
 
 function init() {
+  // Renderer
   renderer = new THREE.WebGLRenderer({
     antialias: true,
     alpha: true,
@@ -21,35 +22,45 @@ function init() {
   renderer.setPixelRatio(window.devicePixelRatio);
   document.body.appendChild(renderer.domElement);
 
+  // Camera
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.z = 10;
+  camera.position.z = 8;
 
+  // Scene
   scene = new THREE.Scene();
 
-  geometry = new THREE.TorusGeometry(3, 1, 64, 64);
+  // Geometry
+  geometry = new THREE.TorusGeometry(3, 1, 100, 100);
 
+  // Texture
   const texture = new THREE.TextureLoader().load(img, (texture)=>{
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.minFilter = THREE.NearestFilter;
   });
-  
+
+  // Material
   material = new THREE.ShaderMaterial({
     vertexShader,
     fragmentShader,
     uniforms: {
       uTime: { value: 0 },
       uTexture: { value: texture },
-      uDebug: { value: debugTexture }
     },
     transparent: true,
     side: THREE.DoubleSide
   });
+
+  // Mesh
   mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
 
+  // Controls
   controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+
+  // Clock
   clock = new THREE.Clock();
 
+  // Events
   onWindowResize();
   window.addEventListener('resize', onWindowResize, false);
 }
