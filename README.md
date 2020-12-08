@@ -1,7 +1,7 @@
 # Kinetic Type Tutorial (Github Universe 2020)
 Kinetic Type with Threejs Tutorial for Github Universe
 
-![Kinetic Type Tutorial](https://github.com/marioecg/github-universe-2020-tutorial/tree/main/src/assets/repo-image.png)
+![Kinetic Type Tutorial](https://raw.githubusercontent.com/marioecg/github-universe-2020-tutorial/main/src/assets/repo-image.png)
 
 ## Installation
 
