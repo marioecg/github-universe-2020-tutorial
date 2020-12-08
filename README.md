@@ -24,6 +24,7 @@ npm run build
 ```
 ## Credits
 
+- [Shawn Lawson's The Force](https://github.com/shawnlawson/The_Force)
 - [Create a Scene with Three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 - [The Book of Shaders](https://thebookofshaders.com/glossary/)
 
