@@ -1,6 +1,8 @@
 # Kinetic Type Tutorial (Github Universe 2020)
 Kinetic Type with Threejs Tutorial for Github Universe
 
+![Kinetic Type Tutorial](https://github.com/marioecg/github-universe-2020-tutorial/tree/main/src/assets/repo-image.png)
+
 ## Installation
 
 The repository bundles the files using [Parcel](https://parceljs.org/), so make sure you have [Node](https://nodejs.org/en/) installed before running the next commands:
